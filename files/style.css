@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+nav {
+    display: flex;
+    background-color: transparent;
+    /* position: absolute; */
+    /* z-index: 10; */
+    /* opacity: 2; */
+    /* background-image: url('./navimage.png');
+            background-size: 100% 120px; */
+}
+
+.logo {
+    width: 125px;
+    height: 100px;
+    float: left;
+    margin: 10px;
+
+}
+
+.links {
+    display: flex;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.navlinks {
+    text-decoration: none;
+    color: rgb(82, 50, 12);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.customer {
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: transparent;
+    padding: 10px;
+    margin: 20px 7px 20px 20px;
+    height: 50px;
+    align-items: end;
+    transition: all ease 0.5s;
+
+}
+
+.customer a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+.customer:hover {
+    background-color: rgb(29, 23, 16);
+    transition: all ease 0.5s;
+    color: aliceblue;
+}
+
+.customer a:hover {
+    color: aliceblue;
+    transition: all ease 0.5s;
+}
+
+.employee {
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: transparent;
+    padding: 10px;
+    margin: 20px 10px 20px 7px;
+    height: 50px;
+    align-items: end;
+    transition: all ease 0.5s;
+}
+
+.employee:hover {
+    background-color: rgb(29, 23, 16);
+    transition: all ease 0.5s;
+    color: aliceblue;
+
+}
+
+.employee a:hover {
+    color: aliceblue;
+    transition: all ease 0.5s;
+
+}
+
+.employee a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+.portal {
+    display: flex;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.videocover {
+    position: relative;
+    width: 100%;
+    height: 100vh;  /* full screen height */
+    overflow: hidden;
+}
+
+.videocover video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* poora video container ko cover karega */
+}
+
+.hero {
+    padding: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero p {
+    color: rgb(42, 40, 40);
+    font-size: 20px;
+    /* font-weight: 700; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* line-height: 0.5; */
+    /* letter-spacing: 2px; */
+    /* word-spacing: 3px; */
+    text-align: center;
+    /* padding-inline: 20px; */
+    padding: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    line-height: 30px;
+}
+
+.hero h3 {
+    color: rgb(78, 75, 75);
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.herobutton {
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+}
+
+.aboutbutton {
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 10px;
+    /* height: 50px; */
+    width: 200px;
+    color: black;
+    background-color: transparent;
+    transition: all ease 0.5s;
+}
+
+.aboutbutton:hover {
+    background-color: rgb(13, 15, 17);
+    color: rgb(199, 201, 202);
+    transition: all ease 0.5s;
+
+}
+
+.aboutbutton a:hover {
+    color: white
+}
+
+.aboutbutton a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.main {
+    /* display: grid; */
+    padding: 20px;
+    margin: 10px;
+    border: 5px solid rgb(205, 192, 180);
+    border-radius: 15px;
+    background-color: rgb(241, 240, 237);
+    box-shadow: 0px 2px 4px rgb(230, 216, 164);
+    position: relative;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.main:hover {
+    transform: scale(1.05);
+}
+
+.main img {
+    width: 100%;
+    height: 300px;
+    /* padding-top: 20px;
+            padding-bottom: 20px; */
+    border-radius: 7px;
+}
+
+.main h3 {
+    text-align: center;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    /* margin: 10px; */
+}
+
+.main p {
+    text-align: center;
+    color: rgb(65, 66, 61);
+    /* padding-top: 20px; */
+    line-height: 23px;
+    padding-bottom: 20px;
+}
+
+.explore {
+    background-image: url(../files/bg.png);
+    opacity: 0.9;
+    background-size: 100%;
+    width: 100%;
+    height: 550px;
+    padding: 50px;
+}
+
+.explore h3 {
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.explore p {
+    text-align: center;
+    padding: 40px;
+    font-size: 32px;
+    color: rgb(54, 31, 2);
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 90%;
+    /* text-decoration: underline; */
+
+}
+
+.jobs {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    border: 3px solid rgb(14, 12, 12);
+    border-radius: 10px;
+    /* width: fit-content; */
+    width: max-content;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    transition: all ease 0.5s;
+
+
+}
+
+.jobs a {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(23, 22, 22);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.jobs:hover {
+    transition: all ease 0.5s;
+    background-color: cornsilk;
+}
